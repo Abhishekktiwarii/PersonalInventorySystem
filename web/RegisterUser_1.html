@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Register User</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+        }
+
+        .b1 {
+            width: 100%;
+            height: 25vh;
+            background-color: rgb(26, 25, 25);
+            border-bottom: 0.5vw solid gray;
+        }
+
+        .icon {
+            width: 50vw;
+            height: 100%;
+            float: left;
+        }
+
+        #b1a1 {
+            color: rgb(15, 15, 153);
+            font-size: 3.5vw;
+            padding-top: 3vw;
+            padding-left: 5vw;
+            display: inline-block;
+        }
+
+        #b1a2 {
+            color: rgb(255, 255, 255);
+            font-size: 3.5vw;
+            padding-left: 3vw;
+            display: inline-block;
+        }
+
+        #span {
+
+            color: gray;
+        }
+
+        .menu {
+            width: 35vw;
+            height: 100%;
+            float: right;
+        }
+
+        .menu ul {
+            list-style: none;
+            width: 100%;
+            display: flex;
+        }
+
+        .menu ul li {
+            color: white;
+            font-size: 1.5vw;
+            list-style: none;
+            margin: 4vw 3vw;
+            text-decoration: none;
+            position: relative;
+            transition: color 0.3s, border-bottom-color 0.3s;
+        }
+
+        .menu ul li::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: white;
+            bottom: -2px;
+            left: 0;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s;
+
+        }
+
+        .menu ul li:hover::before {
+
+            transform: scaleX(1);
+
+        }
+        
+        .menu ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .b2 {
+            width: 100%;
+            height: 75vh;
+            background-color: rgb(13, 13, 94);
+            padding-top: 2vw;
+        }
+
+        .b22 {
+            width: 40vw;
+            height: 70%;
+            margin: auto;
+        }
+
+        h2 {
+            font-size: 3vw;
+            color: rgb(102, 100, 100);
+        }
+
+        table {
+            width: 80%;
+            margin: auto;
+        }
+
+        input {
+            border-radius: 5px;
+            font-size: 1.5vw;
+            padding: 5px;
+            margin: 0.5vw 0;
+        }
+
+        td {
+            font-size: 2vw;
+            color: white;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="container">
+        <div class="b1">
+            <div class="icon">
+                <h2 id="b1a1">PERSONAL</h2><br>
+                <h2 id="b1a2">Inventory<span id="span">System</span></h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="Index.html"> Home</a></li>
+                    <li><a href="RegisterUser_1.html">Register User</a></li>
+                    <li><a href="Login_1.html">Login</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="b2">
+
+            <div class="b22">
+                <form action='addUser'>
+                    <fieldset>
+                        <legend>
+                            <h2>Register User</h2>
+                        </legend>
+
+                        <table>
+                            <tr>
+                                <td>UserName: </td>
+                                <td><input type='text' name='un'></td>
+                            </tr>
+                            <tr>
+                                <td>Password: </td>
+                                <td><input type='password' name='pwd'></td>
+                            </tr>
+                            <tr>
+                                <td>Name: </td>
+                                <td><input type='text' name='name'></td>
+                            </tr>
+                            <tr>
+                                <td>Address: </td>
+                                <td><input type='text' name='add'></td>
+                            </tr>
+                            <tr>
+                                <td>Mobile: </td>
+                                <td><input type='text' name='mob'></td>
+                            </tr>
+                            <tr>
+                                <td>Email: </td>
+                                <td><input type='email' name='email'></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><input type='submit'></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
